@@ -33,4 +33,11 @@ export default defineConfig({
     dts(),
     libInjectCss()
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      },
+    },
+  },
 });
